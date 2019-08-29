@@ -74,10 +74,6 @@ var budgetController = (function () {
 
         deleteItem: function (type, id) {
 
-            /* ids = [1 2 4 6 8]
-             * If the id we want to delete is 6, we need the index = 3.
-             * the map function below loops through the type (inc or exp) and creates an array with all the id's */
-
             var ids, index;
 
             ids = data.allItems[type].map(function (current) {          
